@@ -1,0 +1,594 @@
+@import url(./reset.css);
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 3;
+  background-image: url(../Pixabay/compression/restaurant.webp);
+}
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  /* padding-bottom: 150px; */
+  /* border: 5px solid yellowgreen; */
+
+}
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* border: 10px solid yellow; */
+  background-color: #c4aeae;
+  position: fixed;
+  z-index: 999;
+  justify-content: space-between;
+  margin: auto;
+}
+
+
+/* LOGO大小 */
+.logo img{
+  width: 150px;
+}
+/* LOGO大小 */
+
+
+.menu-icon{
+  width: 100%;
+  display: none;
+
+}
+.navbar{
+/*主選單排列位置*/    
+    display: flex;
+    background-color: #c4aeae;
+  }
+
+
+
+  /* 要從父層<ul>標籤開始水平排列 */
+.navbar ul{
+display: flex;
+}
+  /* 要從父層<ul>標籤開始水平排列 */
+
+
+  .navbar li{
+    width: 150px;
+    /* border: 1px solid palevioletred; */
+    text-align: center;
+    justify-content: space-between;
+    margin-right: 15px; 
+  }
+  /* .nav-two 導覽列a連結標籤 */
+  .nav-two{
+    text-decoration:none;
+    font-size: 30px;
+    margin-right: 30px;
+    position: relative;
+    text-decoration: none;
+    color: #070606; /* 文字顏色 */
+  }
+  
+  .nav-two::after{
+    content: "";
+    position: absolute;
+    bottom: -2px; /* 距離文字底部的距離 */
+    left: 0;
+    width: 0; /* 初始寬度為0 */
+    height: 2px; /* 底線高度 */
+    background-color: white; /* 底線顏色 */
+    transition: width 0.5s ease-in-out; /* 寬度變化的動畫效果，時間可自行調整 */
+  }
+  
+  /* 滑鼠懸停時底線特效 */
+  .nav-two:hover::after {
+    width: 70%; /* 寬度為100%，即完整的底線 */
+  }
+
+  .nav-third{
+    display: none;
+  
+    }
+  /*主選單排列位置*/ 
+  
+
+
+
+.picture-one {
+  display: flex;
+  justify-content: center;
+  /* 上面水平 */
+  /* margin: 0 auto; */
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  background-image: url(../Pixabay/coffee-2319107_1920.jpg);
+  width: 100%;
+  height: 500px;
+  /* line-height: -50px; */
+  color:navy;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  }
+  
+  .picture-one h5{
+  margin-top:  50px;
+  font-family: Arial;
+  font-size: 50px;
+  color: black;
+  padding-top: 150px;
+  }
+
+
+/* 內文區 */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-header {
+  padding: 15px 20px;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #444;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.accordion-header::after {
+  content: '\002B';
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+  color: #fff;
+  transform: rotate(45deg);
+}
+.accordion-header.active{
+  background-color: lightseagreen;
+  color: white;
+}
+.accordion-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid lightseagreen;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  display: none;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+  
+}
+
+  /* 內文區 */
+
+
+
+
+
+
+        /* 底部資訊欄 */
+        footer{
+          display: flex;
+          justify-content: space-between;
+          background-color:#dab587;
+          height: 400px;
+        }
+      
+        footer h3{
+          font-size: 35px;
+          margin-bottom: 10px;
+          margin-left: 100px;
+        }
+        .icon i{
+          font-size: 40px;
+          margin-left: 100px;
+          
+        }
+      
+        .information p{
+          font-size: 30px;
+          margin-left: 100px;
+          line-height: 100px;
+        }
+      
+    
+  
+  
+    .icon i{
+      font-size: 40px;
+      margin-left: 100px;
+      /* border: 10px solid palegoldenrod; */  
+    }
+    .icon i:hover{
+        /*動畫效果*/
+        /* background-color: rgb(206, 170, 146); */
+        /* color: whitesmoke; */
+        z-index: 1;
+        transform: scale(3.0);
+        /* box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1); */
+      }
+    
+    .fa-line{
+      color: rgba(4, 180, 4, 1);
+      
+    }
+    
+  
+    .fa-facebook{
+    color: rgba(64, 153, 255, 1);
+    }
+  
+    .fa-instagram{
+      color: rgba(131, 58, 180, 100);
+    }
+  
+    .information p{
+      font-size: 30px;
+      margin-left: 100px;
+      line-height: 80px;
+    }
+    iframe{
+      width: 1200px;
+      height: 400px;
+      }
+    
+    
+  /* 側欄按鈕 */
+  aside{
+    border: 15px solid palegreen;
+  }
+
+  aside ul{
+    width: 100px;
+    height: 10px;
+    margin-bottom: 20px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    text-decoration: none;
+    /* overflow: hidden; */
+  }
+
+  aside li{
+
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+  aside li i{
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+  }
+
+  aside ul li a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    right: 20px;
+    font-size: 25px;
+    color: #000;
+  }
+
+  aside ul li a:hover{
+  background-color: rgb(206, 170, 146);
+  height: 30px;
+	color: whitesmoke;
+  z-index: 1;
+  transform: scale(1.2);
+  }
+/* 側欄按鈕 */
+
+
+/* -----------螢幕小於414時-------------- */
+@media screen and (max-width:414px){
+
+
+  body{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    background-image: url(../Pixabay/compression/restaurant.webp);
+  }
+  
+  .wrapper{
+    width: 100%;
+    margin: 0 auto;
+    /* padding-bottom: 150px; */
+    /* border: 5px solid yellowgreen; */
+  
+  }
+  
+  
+  /* 頁首 */
+  header{
+    width: 100%;
+    /* border: 10px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    background: none;
+    background-color:  none;
+  /* color:white;   */
+    position: relative;
+    z-index: 999;
+    
+  
+  }
+  /*頁首logo排列位置*/
+  
+  
+  header .logo a img{
+    display: flex;
+    width: 35%;
+    /* border: 1px solid yellow; */
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 40px; */
+    /* margin-left: 61px;  */
+    position: relative;
+    z-index: 999;
+    
+  }
+  .nav-two{
+    line-height: 1.6;
+  }
+  
+  .nav-third{
+    display: block;
+    font-size: 30px;
+    margin-right: 30px;
+    position: relative;
+    text-decoration: none;
+    color: #070606;
+    margin-top: 10px;
+  
+    }
+  
+  
+  .logo i{
+    display: block;
+  }
+  .menu-icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: auto;
+    font-size: 20px;
+    z-index: 999;
+    display: block;
+  }
+  .navbar{
+    width: 60%;
+    position: absolute;
+    height: auto;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: #c4aeae;
+    
+
+  }
+  .navbar ul{
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+    text-align: center
+  }
+  .navbar li{
+    width: 100%;
+    /* margin-bottom: 25px;  */
+    /* border-bottom: 2px solid #5e4646; */
+    border-top: 2px solid #5e4646;
+    
+    
+  
+  }
+  
+  /*主選單排列位置*/ 
+  
+  
+  
+  .picture-one {
+    display: flex;
+    justify-content: center;
+    /* 上面水平 */
+    /* margin: 0 auto; */
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    background-image: url(../Pixabay/compression/hd-wallpaper-2242213_1920.jpg);
+    width: 100vw;
+    height: 25vh;
+    /* line-height: -50px; */
+    color:navy;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    }
+    
+    .picture-one h5{
+    margin-top:  0px;
+    font-family: Arial;
+    font-size: 7vw;
+    color: white;
+    padding-top: 0px;
+    line-height: 8;
+    }
+  
+  
+    /* 內文區 */
+  .accordion {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .accordion-header {
+    padding: 15px 20px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #444;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: lightseagreen;
+    color: white;
+  }
+  
+  .accordion-header::after {
+    content: '\002B';
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-header.active::after {
+    color: #fff;
+    transform: rotate(45deg);
+  }
+  .accordion-header.active{
+    background-color: lightseagreen;
+    color: white;
+  }
+  .accordion-content {
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid lightseagreen;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    display: none;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+    
+  }
+  
+  /* 執行js才會有的樣式 */
+  .accordion-item.open .accordion-header{
+    border-color: lightseagreen;
+    color: white;
+  }
+  .accordion-item.open .accordion-header::after{
+    color: #fff;
+    transform: rotate(45deg);
+  }
+  .accordion-item.open .accordion-content{
+    display: block;
+  }
+  /* 內文區 */
+    
+    
+       /* 底部資訊欄 */
+    footer{
+      display: block;
+      justify-content: space-between;
+      background-color: rgb(210, 197, 165);
+      height: 400px;
+    }
+  
+    footer h3{
+      font-size: 20px;
+      margin-left: 50px;
+      font-weight: bolder;
+      padding-bottom: 20px;
+      padding-top: 25px;
+    }
+    .icon i{
+      font-size: 40px;
+      margin-left: 50px;
+      
+    }
+    
+    .icon i:hover{
+        /*動畫效果*/
+        /* background-color: rgb(206, 170, 146); */
+        /* color: whitesmoke; */
+        z-index: 1;
+        transform: scale(3.0);
+        /* box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1); */
+      }
+  
+  
+    .information p{
+      font-size: 15px;
+      margin-left: 50px;
+      line-height: 80px;
+    }
+  
+    .fa-line{
+      color: rgba(4, 180, 4, 1);
+      
+    }
+    
+  
+  .fa-facebook{
+    color: rgba(64, 153, 255, 1);
+    }
+  
+    .fa-instagram{
+      color: rgba(131, 58, 180, 100);
+    }
+  /* 底部資訊欄 */
+  
+  aside{
+    display: none;
+  }
+  
+  
+  
+  
+
+  }

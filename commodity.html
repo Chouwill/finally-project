@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預訂餐點</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/commodity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+
+<body>
+
+    <div class="wrapper"><!--最外層包裝-->
+
+
+        <header class="header">
+            <div class="logo"><a href="./index .html">
+                    <img src="./LOGO/loge-eight.svg" alt=""></a>
+            </div>
+                    <div class="menu-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="./latest_news.html" class="nav-two">最新消息</a></li>
+                            <li><a href="./about_us.html" class="nav-two">關於我們</a></li>
+                            <li><a href="./located.html" class="nav-two">門市資訊</a></li>
+                            <li><a href="./commodity.html" class="nav-two">預訂專區</a></li>
+                            <li><a href="./question.html" class="nav-two">常見問題</a></li>
+                            <li><a href="./contact_us.html" class="nav-third">聯絡我們</a></li>
+                        </ul>
+                </nav>
+    </header>
+
+
+<div  class="warapper">
+        <div class="picture">
+            <h5>美食派對，幸福你的胃</h5>
+        </div>
+        <!-- <div>"picture-one">美食派對，幸福你的胃img  1個 -->
+
+<div class="main">
+        
+        <div class="picture-one">
+            <img src="./Pixabay/unadon-645641_1920.jpg" alt="">
+            <span class="one"><b>TOP</b>1</span>
+            <p class="item">品名:鰻魚飯</p>
+            <p class="item">價錢:$170元</p>
+            <a href="./commodity.html" class="cart">加入購物車</a>
+        </div>
+
+        <div class="picture-two">
+            <img src="./Pixabay/schnitzel-3779726_1920.jpg" alt="">
+            <p class="item">品名:炸漢堡排</p>
+            <p class="item">價錢:$150元</p>
+            <a href="./commodity.html" class="cart">加入購物車</a>
+        </div>
+
+        <div class="picture-third">
+            <img src="./Pixabay/fried-chicken-250863_1920.jpg" alt="">
+            <p class="item">品名:炸雞(5入)</p>
+            <p class="item">價錢:$110元</p>
+            <a href="./commodity.html" class="cart">加入購物車</a>
+        </div>
+            
+            
+        <div class="picture-seven">
+                <img src="./Pixabay/cake-1850011_1920.jpg" alt="">
+                <p class="item">品名:巧克力草莓蛋糕</p>
+                <p class="item">價錢:$350元</p>
+                <a href="./commodity.html" class="cart">加入購物車</a>
+        </div>
+
+        <div class="picture-eight">
+                <img src="./Pixabay/salad-1603608_1920.jpg" alt="">
+                <p class="item">品名:鮮蔬綜合沙拉</p>
+                <p class="item">價錢:$100元</p>
+                <a href="./commodity.html" class="cart">加入購物車</a>
+        </div>
+
+        <div class="picture-nine">
+                <img src="./Pixabay/cake-1971552_1920.jpg" alt="">
+                <p class="item">品名:伯朗蛋糕</p>
+                <p class="item">價錢:$110元</p>
+                <a href="./commodity.html" class="cart">加入購物車</a>
+        </div>
+            
+</div>
+        <div class="input">
+            <ul>
+                <li>
+                    <h3>顧客用餐資訊</h3>
+                </li>
+                <li>
+                    <p>姓名:</p>
+                    <input class="姓名:" type="text" />
+                </li>
+                <li><!--日期下拉選單-->
+                    <label for="start">訂位日期:</label>
+
+                    <input type class="date" id="start" name="trip-start"
+                    value="2018-07-22"
+                    min="2023-01-01" max="2033-12-31">
+                </li>
+                <li><!--訂位時間下拉選單-->
+                    <P>用餐時間:</P>
+                    <select name="" id="">
+                    <option>請選擇您的用餐時間</option>
+                    <option>13:00</option>
+                    <option>15:00</option>
+                    <option>17:00</option>
+                    <option>19:00</option>
+                    </select>
+                </li>
+                <li>
+                    <p>用餐人數:</p>
+                    <select name="" id="">
+                        <option>請選擇您的用餐人數</option>
+                        <option>1-2人</option>
+                        <option>3位以上</option>
+                        <option>5位以上</option>
+                        <option>其他</option>
+                    </select>
+                </li>
+                <li>
+                <p>訂餐備註留言:</p>
+                <textarea></textarea>
+                </li>
+                <li>
+                    <input class="send" type="submit" value="提交" />   
+                </li>
+                
+            </ul>
+            </div>
+</div>
+
+        
+        <footer>
+            <div class="us">  
+                <h3>關注我們</h3>
+                <div class="icon">
+                <a href="https://line.me/zh-hant/"><i class="fa-brands fa-line fa-2xl"></i></a> 
+                <a href="https://zh-tw.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </div>
+    
+    
+                <div class="information">
+                    <!-- <img src="./LOGO壓縮/個人專題LOGO改1.png" alt=""> -->
+                    <p>訂位電話:02-1234567</p>
+                    <p>客服信箱:123@gmail.com</p>
+                    <p>餐廳位置:台北市中正區濟南路1段321號</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+            
+        
+    
+
+        <aside>
+            <ul>
+                <li>
+                    <a href="./contact_us.html">
+                        <i class="fa-solid fa-headset fa-2xl"></i>
+                        <p>聯絡我們</p>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+            
+        
+    </div><!--wrapper結尾-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
