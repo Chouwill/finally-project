@@ -402,13 +402,13 @@ display: flex;
         color: #000;
       }
     
-      aside ul li a:hover{
+      /* aside ul li a:hover{
       background-color: rgb(206, 170, 146);
       height: 30px;
       color: whitesmoke;
       z-index: 1;
       transform: scale(1.2);
-      }
+      } */
             /* 側欄按鈕 */
 
 /* -----------螢幕小於414時-------------- */
@@ -603,6 +603,7 @@ height: 500px;
 
 .main{
   width: 100%;
+  padding: 0;
 }
 
 .picture-two{
@@ -622,6 +623,7 @@ height: 500px;
 
 .cart{
   height: 65px;
+  width: auto;
 }
   /* 內文 */ 
 

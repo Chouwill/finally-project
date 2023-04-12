@@ -256,13 +256,13 @@ display: flex;
     color: #000;
   }
 
-  aside ul li a:hover{
+  /* aside ul li a:hover{
   background-color: rgb(206, 170, 146);
   height: 30px;
 	color: whitesmoke;
   z-index: 1;
   transform: scale(1.2);
-  }
+  } */
 /* 側欄按鈕 */
 
 iframe{
