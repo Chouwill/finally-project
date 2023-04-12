@@ -419,12 +419,12 @@ display: flex;
     }
     
     .picture-one h5{
-    margin-top:  50px;
-    font-family: Arial;
-    font-size: 5vw;
-    color: black;
-    padding-top: 150px;
-    line-height: -30;
+      margin-top:  0px;
+      font-family: Arial;
+      font-size: 7vw;
+      color: white;
+      padding-top: 0px;
+      line-height: 8;
     }
   
   

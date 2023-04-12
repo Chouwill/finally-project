@@ -1095,7 +1095,7 @@ display: flex;
       
     }
     .input li .date{
-      border: 2px solid palegreen;
+      /* border: 2px solid palegreen; */
     }
 
     aside{
